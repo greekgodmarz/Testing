@@ -9,6 +9,8 @@ The Windows versions are availabe for download [here](https://git-scm.com/downlo
 ## OpenJDK (Java Development Kit)
 This is needed to develop application in the Java programming language.
 
+## Build system (Maven, Gradle)
+
 ## Netbeans IDE (Integrated Development Environment)
 This is an OSS (Open Source Software) IDE.  
 Just like other IDE's (IntelliJ/IDEA, VSCode, Android Studio...) it makes software development a lot easier.  
