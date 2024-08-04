@@ -32,5 +32,10 @@ Unpack the archive to
 ```
 C:\Program Files (x86)\
 ```
-Drag netbeans.exe from the netbeans folder to your desktop.
-
+Drag netbeans64.exe from the netbeans/bin folder to your desktop.
+Start Netbeans. If Netbeans complains about a missing JDK open the netbeans.conf file from your netbeans/etc directory in a text editor (e.g. Notepad++). Go to the end of the file and add a new line:
+```
+netbeans_jdkhome="C:\Program Files (x86)\jdk-21.0.3+9"
+```
+Important: **DO NOT CHANGE ANY OTHER LINES**
+After this Netbeans should find the JDK and start.
