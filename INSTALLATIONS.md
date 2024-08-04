@@ -1,5 +1,5 @@
 # Installations
-## OpenJDK
+## 1. OpenJDK
 Go to the [OpenJDK](http://jdk.java.net/22), download the Windows JDK and unpack the archive to
 ```
 C:\Program Files (x86)\
@@ -25,4 +25,12 @@ OpenJDK Runtime Environment Microsoft-9388422 (build 21.0.3+9-LTS)
 OpenJDK 64-Bit Server VM Microsoft-9388422 (build 21.0.3+9-LTS, mixed mode, sharing)
 ```
 
+## 2. IDE
+Pick the IDE of your choice (here Netbeans).
+Download the [Netbeans IDE](https://apache.org/dyn/closer.lua/netbeans/22/netbeans-22-bin.zip)
+Unpack the archive to
+```
+C:\Program Files (x86)\
+```
+Drag netbeans.exe from the netbeans folder to your desktop.
 
