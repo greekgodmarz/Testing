@@ -59,3 +59,12 @@ Here are some recommendations for the setup process:
 - Chose the credential helper: **None**
 - Configuring extra options: **Enable file system caching**
 - Configuring experimental options: **none**
+
+**Setup Github SSH key**  
+Start the Git Bash that was installed with the Git SCM. Then run this command with your email address to generate an SSH key:
+```
+ssh-keygen.exe -t ed25519 -C "your_email@domain.tld"
+```
+The output may look somehow like this:
+
+***
