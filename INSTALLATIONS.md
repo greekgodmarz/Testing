@@ -66,11 +66,12 @@ Start the Git Bash that was installed with the Git SCM. Then run this command wi
 ssh-keygen.exe -t ed25519 -C "your_email@domain.tld"
 ```
 The output may look somehow like this:
+```
 Enter file in which to save the key (/c/Users/user/.ssh/id_ed25519): /c/Users/user/.ssh/github_ed25519
 Created directory '/c/Users/user/.ssh'.
-Enter passphrase (empty for no passphrase):
-Enter same passphrase again:
-Your identification has been saved in /c/Users/user/.ssh/github_ed25519
+Enter passphrase (empty for no passphrase):  
+Enter same passphrase again:  
+Your identification has been saved in /c/Users/user/.ssh/github_ed25519  
 Your public key has been saved in /c/Users/user/.ssh/github_ed25519.pub
 The key fingerprint is:
 SHA256:oDBQSqNhmCK0b/p7RttjQ/vJEKEoAtBmbOWYFULUgYs test@dummy,com
@@ -86,8 +87,8 @@ The key's randomart image is:
 |  .  + *o .      |
 |   o+ . ++       |
 +----[SHA256]-----+
-
-Type
+```
+Now type
 ```
 cat /c/Users/user/.ssh/github_ed25519.pub
 ```
