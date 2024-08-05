@@ -103,4 +103,5 @@ Now that the key pair is created open your browser and login into your Github ac
 Now enter a title, e.g. "github_access_key" or whatever.
 
 Now copy the public SSH key from the Git Bash window and paste it into the key field in the browser. Set the key type to "Authentication Key"  
+![Screenshot](./docs/images/ssh_key_setup.png)
 Save the new key by pushing "Add SSH Key"
