@@ -61,10 +61,45 @@ Here are some recommendations for the setup process:
 - Configuring experimental options: **none**
 
 **Setup Github SSH key**  
-Start the Git Bash that was installed with the Git SCM. Then run this command with your email address to generate an SSH key:
+Start the Git Bash that was installed with the Git SCM. Then run this command with your email address to generate an SSH key. When prompted for a password leave it empty:
 ```
 ssh-keygen.exe -t ed25519 -C "your_email@domain.tld"
 ```
 The output may look somehow like this:
+Enter file in which to save the key (/c/Users/user/.ssh/id_ed25519): /c/Users/user/.ssh/github_ed25519
+Created directory '/c/Users/user/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/user/.ssh/github_ed25519
+Your public key has been saved in /c/Users/user/.ssh/github_ed25519.pub
+The key fingerprint is:
+SHA256:oDBQSqNhmCK0b/p7RttjQ/vJEKEoAtBmbOWYFULUgYs test@dummy,com
+The key's randomart image is:
++--[ED25519 256]--+
+|*%=+=o           |
+|X+X*.            |
+|**=.. ..         |
+|E oo.....        |
+|.. +.. .S        |
+|. +  . ..        |
+| .  . +..        |
+|  .  + *o .      |
+|   o+ . ++       |
++----[SHA256]-----+
 
-***
+Type
+```
+cat /c/Users/user/.ssh/github_ed25519.pub
+```
+You should get an output similar to this, showing your public SSH key:
+```
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFvV32ik/HOD6vqiPUKquUZ/a/FnuiBiUrHuBRdVjbAX test@dummy.com
+```
+Leave this window open!
+
+Now that the key pair is created open your browser and login into your Github account, click on  
+**Profile => Settings => SSH & GPG keys => New SSH key**
+Now enter a title, e.g. "github_access_key" or whatever.
+
+Now copy the public SSH key from the Git Bash window and paste it into the key field in the browser. Set the key type to "Authentication Key"  
+Save the new key by pushing "Add SSH Key"
