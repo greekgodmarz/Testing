@@ -6,7 +6,7 @@ C:\Program Files (x86)\
 ```
 
 Then open **System Properties => Advanced => Environment Variables**.
-Look for the Path variable under **System variables**.
+Look for the Path variable under **System variables**.  
 **DO NOT CHANGE ITS VALUES! ONLY APPEND THE PATH TO YOUR JDK's bin directory**, e.g.
 ```
 Path=...previous values...**;C:\Program Files (x86)\jdk-21.0.3+9\bin**
@@ -27,6 +27,8 @@ OpenJDK 64-Bit Server VM Microsoft-9388422 (build 21.0.3+9-LTS, mixed mode, shar
 
 ## 2. IDE
 Pick the IDE of your choice (here Netbeans).
+
+### 2.1 Netbeans IDE
 Download the [Netbeans IDE](https://apache.org/dyn/closer.lua/netbeans/22/netbeans-22-bin.zip)
 Unpack the archive to
 ```
@@ -39,3 +41,19 @@ netbeans_jdkhome="C:\Program Files (x86)\jdk-21.0.3+9"
 ```
 Important: **DO NOT CHANGE ANY OTHER LINES**
 After this Netbeans should find the JDK and start.
+
+## 3. Git SCM
+This is needed to organize and versioning code and helps to collaborate on projects.  
+Download the standalone versions for your system [here](https://git-scm.com/download/win) and execute the installation binary (e.g. Git-2.46.0-64-bit.exe)
+Watch out that you pick your preferred editor (e.g. Notepad, Wordpad, Notpad++, whatever ...)
+Here are some recommendations for the setup process:
+- Editor: **notepad.exe**
+- Adjusting the name of the initial branch in new repositories: **Override the default branch name for new repositories ==> main**
+- Adjusting your PATH environment: **GIT from the commandline and also from 3rd-party software (recommended)**
+- Choosing HTTP transport backend: **Use the OpenSSL library**
+- Configuring the line ending conversions: **Checkout Windows-style, commit Unix-style line endings**
+- Configuring the terminal emulator to use with Git Bash: **Use MinTTY (the default terminal of MSYS2)**
+- Chose the default behavior of 'git pull': **Fast-forward or merge**
+- Chose the credential helper: **None**
+- Configuring extra options: **Enable file system caching**
+- Configuring experimental options: **none**
