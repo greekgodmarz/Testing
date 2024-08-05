@@ -47,6 +47,8 @@ This is needed to organize and versioning code and helps to collaborate on proje
 Download the standalone versions for your system [here](https://git-scm.com/download/win) and execute the installation binary (e.g. Git-2.46.0-64-bit.exe)
 Watch out that you pick your preferred editor (e.g. Notepad, Wordpad, Notpad++, whatever ...)
 Here are some recommendations for the setup process:
+- Select Components: **Additional icons - On the Desktop**
+- Select Start Menu Folder: **Git**
 - Editor: **notepad.exe**
 - Adjusting the name of the initial branch in new repositories: **Override the default branch name for new repositories ==> main**
 - Adjusting your PATH environment: **GIT from the commandline and also from 3rd-party software (recommended)**
