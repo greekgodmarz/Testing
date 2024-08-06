@@ -6,6 +6,11 @@ Git is needed to store and version all project files.
 To work with Git the git binaries to work with Git repositories must be installed.  
 The Windows versions are availabe for download [here](https://git-scm.com/download/win)
 
+To use Git with Github it's required to setup an SSH key.
+Github stopped using user/password credentials a while ago.
+
+Github also recommends to setup 2FA (two factor authorization). For this you may install an authenticator app on your cell phone (like Google's [Authenticator App](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&hl=en_US)), activate 2FA in Guthub and add it to the authenticator app.
+
 ## 1.2 OpenJDK (Java Development Kit)
 This is needed to develop application in the Java programming language.
 
