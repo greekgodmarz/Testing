@@ -73,4 +73,31 @@ git push
 ````
 Not Git will inform you about the changes pushed to the remote server.
 
- 
+The whole process may look like this [example]:
+```
+repos/Testing> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   HOWTO.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+repos/Testing> git add HOWTO.md 
+repos/Testing> git commit -m "git push added to the HOWTO's"
+[main ae79072] git push added to the HOWTO's
+ 1 file changed, 33 insertions(+)
+repos/Testing> git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 986 bytes | 986.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:greekgodmarz/Testing.git
+   6c587ce..ae79072  main -> main
+```
+
