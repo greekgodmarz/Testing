@@ -4,8 +4,10 @@ The Windows Git SCM installation also installs a tool named "Git Bash".
 Git Bash offers a variety of Linux tools on Windows that are very useful for software development, testing, deployment, configuration and many other tasks.
 
 ## 1.1 Git
+For all the commands below you need to open the Git Bash application. It provides you with a resizable text console and plenty of tools.
 
 ### 1.1.1 Cloning A Repo
+This implies that there's alread a remote repository that you can clone.
 Cloning a repository to the local file system:
 ```
 git clone git@github.com:greekgodmarz/Testing.git [directory]
@@ -40,7 +42,29 @@ git push
 If you push this new branch the very first time Git may want to know where to push it. In this case Git gives you a hint in its response how the address the upstream to your remote repository that you want to use.
 In this case just type the command Git suggested to you. After doing this once your new branch is on the remote repository and you don't need to do this again.
 
-### 1.1.3 Checking In Files
+
+### 1.1.3 Checking Out A Repository
+For this you need the remote URL. On Github it's shown when pressing the code button of a repository.  
+Use the SSH URL. For this you must have an SSH key deployed in your Github account. See [INSTALLATIONS.md](INSTALLATIONS.md) for more information on this topic.
+Assuming the URL is "git@github.com:greekgodmarz/Testing.git", type
+```
+git clone git@github.com:greekgodmarz/Testing.git
+```
+Now Git should clone this remote repository locally into the directory Testing.
+If you want to clone it at a different location or under a different name then change into the desired directory first or type the name of the desired local directory, for instance:
+```
+git clone git@github.com:greekgodmarz/Testing.git first_test
+```
+
+Now change the working directory to the cloned directory and check what branch you're on and maybe switch to the branch you want to work with:
+```
+cd first_test
+git branch -a
+git checkout devel
+```
+In case that the *devel* branch doesn't exist yet you'll get an error message. You can create that branch as described before.
+
+### 1.1.4 Checking In Files
 If you do changes to your files you may want to verioning them.
 
 The first step is to figure out what changes were made:
