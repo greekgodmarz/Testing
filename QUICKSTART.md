@@ -5,8 +5,8 @@
 git clone git@github.com:greekgodmarz/Testing.git
 cd Testing
 ```
-Leave the console window open for later...
-Details [here](HOWTO.md)
+Leave the console window open for later...  
+More details [here](HOWTO.md)
 
 # 2. Open NetBeans IDE
 Open the NetBeans IDE and then open the cloned project in 
@@ -23,7 +23,7 @@ com.marz.lang
 right-click on Basics.java and select Run File"
 
 # 4. Add a devel branch
-A different branch as devel helps to work on sources while leaving your main branch untouched and the sources there intact.
+A different branch as devel helps to work on sources while leaving your main branch untouched and the sources there intact.  
 Execute the following statements in the window you left open (from 1. Clone the project)
 ```
 git branch devel
@@ -38,6 +38,6 @@ These commands
 - you're pushing it back to Github.
 The last command will tell you that it doesn't know yet to what origin and suggest a slightly different push command. Execute this one then instead.
   
-Now you have a devel branch that your can work with. Even if it would break it would leave your work in main untouched. You also can restore broken work on the devel branch with the content from the main branch.
+Now you have a devel branch that your can work with. Even if it would break it would leave your work in main untouched. You also can restore broken work on the devel branch with the content from the main branch.  
 This works generally and may also be useful for other types of work, as artwork for instance.
 
