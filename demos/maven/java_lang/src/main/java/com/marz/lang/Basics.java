@@ -17,7 +17,7 @@ public class Basics {
    * @param args 
    */
   public static void main(String[] args) {
-    // print something to the standard output stream (console):
+    // print something to the standard output stream (console ):
     System.out.println("Hello World!");
     
     // print an error to the error stream:
