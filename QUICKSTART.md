@@ -32,10 +32,10 @@ git merge main
 git push
 ```
 These commands
-- creates a branch named devel
-- you're switching to this branch
-- you're merging everything from the main branch into the new devel branch
-- you're pushing it back to Github.
+- create a branch named devel
+- then you're switching to this branch
+- then you're merging everything from the main branch into the new devel branch
+- then you're pushing it back to Github.
 The last command will tell you that it doesn't know yet to what origin and suggest a slightly different push command. Execute this one then instead.
   
 Now you have a devel branch that your can work with. Even if it would break it would leave your work in main untouched. You also can restore broken work on the devel branch with the content from the main branch.  
