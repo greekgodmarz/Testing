@@ -36,4 +36,7 @@ These commands
 - you're merging everything from the main branch into the new devel branch
 - you're pushing it back to Github.
 The last command will tell you that it doesn't know yet to what origin and suggest a slightly different push command. Execute this one then instead.
+  
+Now you have a devel branch that your can work with. Even if it would break it would leave your work in main untouched. You also can restore broken work on the devel branch with the content from the main branch.
+This works generally and may also be useful for other types of work, as artwork for instance.
 
