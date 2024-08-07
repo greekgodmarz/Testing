@@ -5,6 +5,7 @@
 git clone git@github.com:greekgodmarz/Testing.git
 cd Testing
 ```
+Details [here](HOWTO.md)
 
 # 2. Open NetBeans IDE
 Open the NetBeans IDE and then open the cloned project in 
