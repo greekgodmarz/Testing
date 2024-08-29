@@ -1,5 +1,5 @@
 # 1. Useful Commands
-
+ 
 The Windows Git SCM installation also installs a tool named "Git Bash".
 Git Bash offers a variety of Linux tools on Windows that are very useful for software development, testing, deployment, configuration and many other tasks.
 
